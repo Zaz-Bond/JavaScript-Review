@@ -1,19 +1,33 @@
 //Make a 'favoriteThings' object that contains the following keys: band, food, person, book, movie, holiday. Have the values to those keys be your favorite thing in that category. 
 
   //Your code here
+var favoriteThings = {
+    Band: 'Brand New',
+    Food: 'Sushi',
+    Person: 'Shae',
+    Book: 'Sieze The Night',
+    Movie: 'Donny Darko',
+    Holiday: 'Halloween',
+}
 
 //After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 
   //Your code here
+favoriteThings.Car = 'Chevy',
 
 //Now change the food key in your favoriteThings object to be 'Lettuce' and change the book key in your favoriteThings object to be '50 Shades of Gray'. 
 
   //Your code here
+    favoriteThings.Food = 'Lettuce';
+    favoriteThings.Book = '50 Shades';
+    
+
 
 //Now, alert your favorite person, then alert your favorite book.
 
   //Your code here
-
+alert(favoriteThings.Person);
+alert(favoriteThings.Book);
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
@@ -32,17 +46,29 @@ var user = {
 //Above you're given a user object. Loop through the user object checking to make sure that each value is truthy. If it's not truthy, remove it from the object. hint: 'delete'.
 
   //Your code here
+var checker = function(x) {
+    for (var prop in x) {
+        if(!x[prop]) {
+            delete(x[prop])
+        }
+    }
+}
 
 //Once you get your truthy object, Change the remaining values in the object to be specific to you (name: 'your name', username: 'your username'), rather than my information.
 
   //Your code here
+user.name = 'devin';
+user.pwHash = 'r348234890284';
+user.username = 'DBond007';
+
+
 
 //Now console.log your object and make sure it looks right.
 
   //Your code here
 
 
-
+console.log(user);
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
@@ -50,14 +76,23 @@ var user = {
 //create an empty object called methodCollection. 
 
   //Your code here
+var methodCollection = {}
 
 //Now add two methods (functions that are properties on objects) to your methodCollection object. One called 'alertHello' which alerts 'hello' and another method called logHello which logs 'hello' to the console. 
 
   //Your code here
+methodCollecion.alertHello = function {
+    alert('hello') };
+methodCollecion.logHello = function {
+    console.log('Hello')};
+
 
 //Now call your alertHello and logHello methods. 
 
   //Your code here
+
+methodCollecion.alertHello();
+methodCollecion.logHello();
 
 
 

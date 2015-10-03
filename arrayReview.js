@@ -3,7 +3,12 @@ var threeItems = [1,2,3];
 //alert the result of your function
 
   //code here
-
+var last = function(arr) {
+    for(var i = 0; i < arr.length - 1; i++ ){
+}
+return arr[i]
+    
+}
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
@@ -14,8 +19,14 @@ var threeItems = [1,2,3];
 var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
   //code here
-
-
+var evenFinder = function(arr) {
+    for(var i = arr.length - 1; i > -1; i--) {
+        if(arr[i] % 2 !== 0) {
+            arr.splice(i, 1) 
+        }
+    }
+return arr
+}
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
 
 
@@ -27,6 +38,7 @@ var getRandomArbitrary = function() {
 var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 
   //code here
+function 
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
@@ -37,6 +49,7 @@ var randomArray = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 var first = [1,2,3,4,5];
 var second;
 
+second = first.slice(0);
   //code here
 
 alert(first) //[1,2,3,4,5];
